@@ -1,7 +1,15 @@
 aid: speschina
-name: speschina
-description: speschina is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: SPES (speschina)
+description: >-
+  SPES (诗裴丝) is a China-based consumer personal-care and beauty brand operating a
+  direct-to-consumer business across Chinese e-commerce and social-commerce channels,
+  including its Tmall flagship store, a JD.com storefront, and Douyin, Xiaohongshu (RED),
+  and Weibo social accounts, with a WeChat official account. The brand runs a marketing
+  website (a Vue.js / Element UI single-page app served from Alibaba Cloud) and was surfaced
+  as a portfolio company of Qiming Venture Partners. It does not currently publish any public
+  developer API, OpenAPI specification, SDK, developer portal, or API documentation; the only
+  HTTP API referenced by its site is a private content backend for the marketing pages. This
+  profile records the enrichment pass that confirmed there is no public API surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/speschina/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +17,30 @@ x-backed-by:
 - qiming
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Consumer Brand
+- Personal Care
+- Beauty
+- E-commerce
+- Direct to Consumer
+- China
+- No Public API
+image: https://haomai.oss-cn-shanghai.aliyuncs.com/speschina/img/about/banner.jpg
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +49,11 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://speschina.com
+  url: https://www.speschina.com
+- type: DomainSecurity
+  url: security/speschina-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

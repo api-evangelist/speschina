@@ -1,0 +1,30 @@
+generated: '2026-07-21'
+method: probed
+source: dig + openssl s_client + curl HEAD (apex https://speschina.com times out on 443; www host serves)
+hosts:
+- host: www.speschina.com
+  https: true
+  tls_version: TLSv1.3
+  cert_issuer: 'C=CN, O=Beijing Xinchacha Credit Management Co., Ltd., CN=Xcc Trust DV SSL CA'
+  cert_expires: '2027-03-08'
+  hsts: false
+  hsts_max_age: null
+  a_record: 118.178.138.165
+- host: speschina.com
+  https: false
+  note: apex resolves (121.43.159.115) but 443 connection times out; only the www host serves
+domains:
+- domain: speschina.com
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false
+  dmarc_policy: null
+  mx:
+  - mxn.mxhichina.com
+  - mxw.mxhichina.com
+  mx_provider: Alibaba Cloud (Aliyun / mxhichina)
+notes: >-
+  Consumer brand marketing site (Vue/ElementUI SPA) hosted on Alibaba Cloud in China; no
+  public API surface. No HSTS, no CAA, no DNSSEC, and no SPF/DMARC email-authentication
+  records were published at probe time. Absence of these records is recorded data, not an error.
