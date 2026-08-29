@@ -11,6 +11,9 @@ description: >-
   HTTP API referenced by its site is a private content backend for the marketing pages. This
   profile records the enrichment pass that confirmed there is no public API surface to catalog.
 url: https://raw.githubusercontent.com/api-evangelist/speschina/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "This profile records the enrichment pass that confirmed there is no public API surface to catalog."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
