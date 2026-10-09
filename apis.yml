@@ -37,6 +37,9 @@ accessModel:
   trial: false
   try_now: false
   public: false
+  gated: private
+  gated_source:
+  - tag:No Public API
   label: Unknown
   confidence: low
   source: []
@@ -53,7 +56,6 @@ tags:
 - E-Commerce
 - Direct to Consumer
 - China
-- No Public API
 tags_raw:
 - Company
 - Consumer Brand
@@ -62,7 +64,6 @@ tags_raw:
 - E-commerce
 - Direct to Consumer
 - China
-- No Public API
 image: https://haomai.oss-cn-shanghai.aliyuncs.com/speschina/img/about/banner.jpg
 apis: []
 maintainers:
@@ -80,3 +81,5 @@ x-enrichment:
   status: minimal
   artifacts_added: 1
   pass: local-v1
+x-tags-removed:
+- No Public API
