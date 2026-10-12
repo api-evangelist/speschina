@@ -1,0 +1,18 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/speschina/integrations
+- https://zapier.com/apps/spes-speschina/integrations
+- https://n8n.io/integrations/speschina/
+- https://composio.dev/toolkits/speschina
+- https://monid.ai/tools/speschina
+checked:
+- https://composio.dev/toolkits/speschina
+- https://monid.ai/tools/speschina
+- https://n8n.io/integrations/speschina/
+- https://zapier.com/apps/spes-speschina/integrations
+- https://zapier.com/apps/speschina/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
